@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ titolo|default('Windor ERP App') }}!{% endblock %}</title>
+
+    {#Stylesheets#}
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/layout.css') }}">
+    {% endblock %}
+
+    {#Controllo IE9#}
+    {% block IE9 %}
+        {#html5shiv in node_module#}
+        {#respond/1.4.2 non in node_module da approfondire...#}
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    {% endblock %}
+</head>
+
+{#BODY#}
+<body class="{{ bodyClass|default('hold-transition skin-blue fixed sidebar-mini') }}">
+
+<div class="wrapper">
+    {% block body %}
+
+        {#Main Header#}
+        {% block header %}
+            {{ include('@Componenti/_main-header.html.twig') }}
+        {% endblock %}
+
+        <!-- Left side column. contains the sidebar -->
+        {% block sidebar %}
+            {{ include('@Componenti/_left_sidebar.html.twig') }}
+        {% endblock %}
+        <!-- =============================================== -->
+
+        <!-- Content Wrapper. Contains page content -->
+        {% block content %}
+            {{ include('@Componenti/_default-content.html.twig') }}
+        {% endblock %}
+
+        {#Main Footer#}
+        {% block footer %}
+            {{ include('@Componenti/_main_footer.html.twig') }}
+        {% endblock %}
+
+        <!-- Control Sidebar -->
+        {% block controlSidebar %}
+            {{ include('@Componenti/_control_sidebar.html.twig') }}
+        {% endblock %}
+
+    {% endblock %}
+</div>
+
+{% block javascripts %}
+    <script src="{{ asset('build/layout.js') }}"></script>
+{% endblock %}
+</body>
+</html>

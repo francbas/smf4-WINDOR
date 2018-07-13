@@ -1,0 +1,66 @@
+<header class="main-header">
+    <!-- Logo -->
+{{ include('@Componenti/_logo.html.twig') }}
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <div>
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+
+            <div class="btn-group d-none d-lg-inline-block mt-5">
+                <button class="btn dropdown-toggle mr-10 btn-outline btn-white" type="button" data-toggle="dropdown">
+                    Dashboard
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item"
+                       href="http://html-templates.multipurposethemes.com/bootstrap-4/admin/fab-admin/src/"><i
+                                class="fa fa-dashboard w-30"></i>Main Dashboard</a>
+                    <a class="dropdown-item"
+                       href="http://html-templates.multipurposethemes.com/bootstrap-4/admin/fab-admin/ecommerce-dashboard/"><i
+                                class="fa fa-shopping-basket w-30"></i>eCommerce Dashboard</a>
+                    <a class="dropdown-item"
+                       href="http://html-templates.multipurposethemes.com/bootstrap-4/admin/fab-admin/hospital-dashboard/"><i
+                                class="fa fa-heartbeat w-30"></i>Hospital Dashboard</a>
+                    <a class="dropdown-item"
+                       href="http://html-templates.multipurposethemes.com/bootstrap-4/admin/fab-admin/horizontal-nav/main"><i
+                                class="fa fa-bars w-30"></i>Horizontal Nav Dashboard</a>
+                    <a class="dropdown-item"
+                       href="http://html-templates.multipurposethemes.com/bootstrap-4/admin/fab-admin/horizontal-nav/real-estate-dashboard"><i
+                                class="fa fa-building w-30"></i>Real Estate Dashboard</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+                <li class="search-box">
+                    <a class="nav-link hidden-sm-down" href="javascript:void(0)"><i class="mdi mdi-magnify"></i></a>
+                    <form class="app-search" style="display: none;">
+                        <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i
+                                    class="ti-close"></i></a>
+                    </form>
+                </li>
+
+                <!-- Messages -->
+                {{ include('@Componenti/_messaggi.html.twig') }}
+
+                <!-- Notifications -->
+                {{ include('@Componenti/_notifiche.html.twig') }}
+
+                <!-- Tasks-->
+                {{ include('@Componenti/_tasks.html.twig') }}
+
+                <!-- User Account-->
+                {{ include('@Componenti/_user_account.html.twig') }}
+
+                <!-- Control Sidebar Toggle Button -->
+                <li>
+                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-cog fa-spin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

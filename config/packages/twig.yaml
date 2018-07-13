@@ -1,4 +1,9 @@
 twig:
-    paths: ['%kernel.project_dir%/templates']
+    paths:
+        '%kernel.project_dir%/templates': ~
+        '%kernel.project_dir%/templates/fab-admin': Fab-admin
+        '%kernel.project_dir%/templates/fab-admin/componenti': Componenti
+        '%kernel.project_dir%/templates/fab-admin/main/pages': Pagine
+
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'

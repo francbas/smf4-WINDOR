@@ -1,0 +1,4 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "import/bootstrap-extend.css";
+@import "import/master_style.css";
+@import "import/skins/_all-skins.css";

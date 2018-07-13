@@ -1,62 +1,805 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5df20ce6-1955-4e69-abc9-ad83d4672def" name="Default" comment="commit base">
-      <change afterPath="$PROJECT_DIR$/.env.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smf4-WINDOR.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/easy_log_handler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    <list default="true" id="5df20ce6-1955-4e69-abc9-ad83d4672def" name="Default" comment="aggiornati gli assets, creata struttura template e layout di base.">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/francescobasile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/bootstrap-extend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/glyphicons/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-arrows-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-arrows-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-arrows-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-arrows-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-elaboration-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-elaboration-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-elaboration-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-basic-elaboration-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-ecommerce-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-ecommerce-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-ecommerce-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-ecommerce-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-music-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-music-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-music-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-music-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-software-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-software-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-software-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-software-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-weather-10.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-weather-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-weather-10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/fonts/linea-weather-10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/linea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/master_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/skins/_all-skins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/Italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/agenda.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/alarm-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/align-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/align-justify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/align-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/align-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/anchor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/android.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-double-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-double-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-double-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-double-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/angle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/announcement.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-circle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-circle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-circle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-circle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-top-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-top-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrows-corner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrows-horizontal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/arrows-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/back-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/back-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bar-chart-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bar-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/basketball.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/blackboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bolt-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bolt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bookmark-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/briefcase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/brush-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/car.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/check-box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/clip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/cloud-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/cloud-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/cloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/comment-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/comments-smiley.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-eject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-record.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-shuffle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-skip-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-skip-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/control-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/css3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/cut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/desktop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/direction-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/direction.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/dribbble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/dropbox-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/dropbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/drupal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/envelope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/eraser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/exchange-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/export.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/face-sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/face-smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/files.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/flag-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/flag-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/flickr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/flickr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/folder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/gallery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/game.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/gift.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-point-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-point-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-point-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-point-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hand-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/harddrive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/harddrives.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/headphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/headphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/heart-broken.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/help-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/html5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/hummer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/id-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/import.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/infinite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/info-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ink-pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/joomla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/jsfiddle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layers-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-accordion-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-accordion-merged.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-accordion-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-column4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-cta-btn-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-cta-btn-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-cta-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-cta-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-cta-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid2-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-grid4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-line-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-list-large-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-list-post.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-list-thumb-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-list-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-center-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-overlay-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-overlay-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-overlay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-media-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-menu-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-menu-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-menu-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-sidebar-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-sidebar-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-sidebar-none.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-sidebar-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-slider-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-slider.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-tab-min.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-tab-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-tab-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-width-default-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-width-default.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout-width-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/layout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/light-bulb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/line-dashed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/line-dotted.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/line-double.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/linux.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/list-ol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/location-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/location-pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/loop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/magnet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/map-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/marker-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/medall-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/medall.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/menu-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/microphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/microphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/microsoft-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/microsoft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/more-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/mouse-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/mouse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/music-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/music.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/new-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/notepad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/package.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/paint-bucket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/paint-roller.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/palette.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/panel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pencil-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pencil-alt2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pie-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pin-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pin2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pinterest-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/plug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/power-off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/printer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/pulse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/quote-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/quote-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/receipt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/reddit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/reload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/rocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/rss-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/rss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ruler-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ruler-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ruler-pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ruler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/save-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/share-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/sharethis-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/sharethis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shield.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shift-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shift-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shift-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shift-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shopping-cart-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shopping-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/shortcode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/signal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/slice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/smallcap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/soundcloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/split-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/split-v-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/split-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/spray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/stack-overflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/stamp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/stats-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/stats-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/tablet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/target.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/themify-favicon-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/themify-favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/themify-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/thought.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/thumb-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/thumb-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/timer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/trello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/truck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/tumblr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/tumblr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/twitter-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/underline.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/unlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/uppercase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/video-camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/video-clapper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/view-grid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/view-list-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/view-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/vimeo-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/vimeo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/volume.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/wallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/wand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/wheelchair.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/widget-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/widget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/widgetized.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/wordpress.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/world.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/write.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/yahoo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/zoom-in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/SVG/zoom-out.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/Themify IconFonts 5-23-2014.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/150x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/alert/alert7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/bmi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/card/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/default-50x50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/default-50x50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/default-50x50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/down-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/error-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/full/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/landscape9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/studio9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb-sm/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/gallery/thumb/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/human.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/login-register.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo-dark-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo-light-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo/logo-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo/logo-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo/logo-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo/logo-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/logo/logo-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/model2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/model3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/music/a-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/1200x675.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/coming-soon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/coming-soon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/coming-soon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-change-pass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-closed-account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-expired-card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-update.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-verify-email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/preview/email-welcome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/product/product-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/slider/slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/slider/slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/slider/slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/slider/slide-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/smoking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/tab/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/tab/img2 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/tab/img2-(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/tab/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/up-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user-info.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user2-280x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user2-280x90.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/images/weight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/moduli/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/advanced-form-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/app-contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/chart-widgets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/coundown-timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/data-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/formatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/fullscreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/mailbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/peity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/steps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/toastr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/widget-charts2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/widget-flot-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/widget-inline-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fab-admin/js/pages/widget-morris-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_control_sidebar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_default-content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_left_sidebar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_logo.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_main-header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_main_footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_messaggi.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_notifiche.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_tasks.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/componenti/_user_account.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/badges.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/bootstrap-switch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/border-utilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/cards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/color-utilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/date-paginator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/dropdown-grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/dropdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/general.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/media-advanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/modals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/nestable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/notification.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/portlet-draggable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/ribbons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/sliders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/sweatalert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/timeline-horizontal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/UI/timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/app-chat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/app-contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/app-ticket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/calendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/userlist-grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/app/userlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/box/advanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/box/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/box/color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/box/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/charts/chartjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/charts/flot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/charts/inline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/charts/morris.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/charts/peity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/product-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/product-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/change-pass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/closed-account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/expired-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/verify-email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/email/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/extension/fullscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/advanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/code-editor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/editor-markdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/editors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/form-validation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/form-wizard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/general.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/forms/xeditable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/layout/boxed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/layout/collapsed-sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/layout/fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/mailbox/compose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/mailbox/mailbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/mailbox/read-mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/map/map-google.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/map/map-vector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/coming-soon-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/coming-soon-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/coming-soon-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/coming-soon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/custom-scroll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/invoice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/lightbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/lockscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/maintenance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/pace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/pricing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/samplepage/user-pass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/tables/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/tables/editable-tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/tables/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/tables/table-color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/social.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/statistic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/weather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fab-admin/main/pages/widgets/widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,30 +808,100 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" executionDataType="PHAR" phpInterpreterId="38209575-9e35-4511-976e-0280e8c69fed" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="85">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#147#170#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phpunit.xml.dist" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/fab-admin/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="52" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="80" />
+            <state relative-caret-position="403">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Twig File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>var</find>
+      <find>DataKey</find>
+      <find>slim</find>
+      <find>template</find>
+      <find>$</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>let</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/templates/fab-admin/componenti</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -97,7 +910,33 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/config/bundles.php" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/Moduli/fabAdminPushMenu.js" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/Moduli/FabAdminLayout.js" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/demo.js" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/assets/vendor_components/linea-icons/linea.css" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/css/import/master_style.css" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/css/layout.css" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/template.js" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/moduli/template.js" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/include/main-header.html.twig" />
+        <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_logo.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_messaggi.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_notifiche.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_tasks.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_user_account.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_main-header.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_left_sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_main_footer.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_control_sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/componenti/_default-content.html.twig" />
+        <option value="$PROJECT_DIR$/templates/fab-admin/base.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/assets/fab-admin/js/layout.js" />
       </list>
     </option>
   </component>
@@ -114,8 +953,37 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/Flot/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/Magnific-Popup-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/bootstrap-daterangepicker/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/bootstrap-markdown-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/easypiechart/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/eve-raphael/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/flag-icon/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/ion.rangeSlider/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jQuery-slimScroll-1.3.8/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-knob/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-slimscroll/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-steps-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-toast-plugin-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-validation-1.17.0/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-wizard-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/lightbox-master/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/morris.js/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/babel-config/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/bundle/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/eslint-config-popper/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/popper/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/test-utils/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/test/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/popper/packages/tooltip/package.json" />
+      <path value="$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/select2/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -224,6 +1092,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,19 +1100,51 @@
               <item name="smf4-WINDOR" type="b2602c69:ProjectViewProjectNode" />
               <item name="smf4-WINDOR" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="smf4-WINDOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smf4-WINDOR" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smf4-WINDOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smf4-WINDOR" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fab-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smf4-WINDOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smf4-WINDOR" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smf4-WINDOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="bootstrap&#9;FILE&#9;file:///Users/francescobasile/Documents/PhpstormProjects/smf4-WINDOR/vendor/twbs/bootstrap/dist/css/bootstrap-grid.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Twig" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/fab-admin" />
+      <recent name="$PROJECT_DIR$/templates/fab-admin/componenti" />
+      <recent name="$PROJECT_DIR$/templates/fab-admin" />
+      <recent name="$PROJECT_DIR$/templates/fab-admin/include" />
+      <recent name="$PROJECT_DIR$/assets/fab-admin/js/Moduli" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -258,7 +1159,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -267,97 +1168,504 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530974027162</updated>
-      <workItem from="1530974031862" duration="744000" />
+      <workItem from="1530974031862" duration="5884000" />
+      <workItem from="1531006415645" duration="785000" />
+      <workItem from="1531007353317" duration="3080000" />
+      <workItem from="1531077990879" duration="7210000" />
+      <workItem from="1531089189472" duration="5323000" />
+      <workItem from="1531095877232" duration="8316000" />
+      <workItem from="1531215463781" duration="1363000" />
+      <workItem from="1531431965816" duration="2719000" />
+      <workItem from="1531435032863" duration="6488000" />
     </task>
+    <task id="LOCAL-00001" summary="commit base">
+      <created>1530974953741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530974953741</updated>
+    </task>
+    <task id="LOCAL-00002" summary="escluso FrameworkExtraBundle per deprecated in php da 5.2">
+      <created>1530975969746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530975969746</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="744000" />
+    <option name="totallyTimeSpent" value="41168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="822" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32905984" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info id="npm" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49928468" weight="0.52136755" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143063" side_tool="true" weight="0.26780626" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.22792023" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.33760685" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49416342" visible="true" weight="0.2761087" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info id="Structure" order="1" sideWeight="0.50583655" side_tool="true" weight="0.26180258" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info id="npm" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49928468" weight="0.32905984" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49928468" visible="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5007153" side_tool="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886104" visible="true" weight="0.25822604" />
+      <window_info id="Structure" order="1" sideWeight="0.5011389" side_tool="true" weight="0.25107297" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.22792023" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.39601138" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" weight="0.32905984" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32905984" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit base" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit base" />
+    <MESSAGE value="escluso FrameworkExtraBundle per deprecated in php da 5.2" />
+    <MESSAGE value="aggiornati gli assets, creata struttura template e layout di base." />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiornati gli assets, creata struttura template e layout di base." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery-ui/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68" />
+        <state relative-caret-position="-757">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery.peity/jquery.peity.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/assets/vendor_components/raphael/raphael.min.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/respond/main.js" />
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery-slimscroll/jquery.slimscroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8041">
+          <caret line="473" column="11" lean-forward="true" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/Moduli/FabAdminLayout.js" />
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/Moduli/fabAdminPushMenu.js" />
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/fastclick/lib/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fastclick/lib/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/linea-icons/linea.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/themify-icons/themify-icons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/glyphicons/package.json" />
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/assets/vendor_components/flag-icon/css/flag-icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/flag-icon-css/css/flag-icon.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/simple-line-icons-master/css/simple-line-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3026">
+          <caret line="178" column="19" lean-forward="true" selection-start-line="178" selection-start-column="19" selection-end-line="179" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/material-design-iconic-font/css/materialdesignicons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/master_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.twig" />
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="10170" column="24" selection-start-line="10170" selection-start-column="23" selection-end-line="10170" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="357">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/framework-extra-bundle/Tests/Fixtures/FooBundle/Resources/views/invokable_container/another_variable.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_logo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="52" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="80" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_messaggi.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_notifiche.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_tasks.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_user_account.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_left_sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_main_footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_control_sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="183" column="38" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_main-header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/main/pages/ecommerce/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-793">
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/main/pages/app/userlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18306">
+          <folding>
+            <element signature="e#939#1128#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20452">
+          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_default-content.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/main/pages/layout/fixed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#932#1121#0" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/moduli/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15547">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#334#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/js/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#147#170#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fab-admin/css/import/bootstrap-extend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12816">
+          <caret line="1295" column="23" selection-start-line="1295" selection-start-column="23" selection-end-line="1295" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#125#182#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/componenti/_default-content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fab-admin/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
